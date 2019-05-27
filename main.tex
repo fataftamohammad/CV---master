@@ -1,0 +1,70 @@
+\documentclass[]{article}
+\usepackage{multirow}
+\usepackage{fontspec}
+\setmainfont{Times New Roman}
+\usepackage[
+	top = 0.3cm,
+    right = 1.5cm,
+    left = 1.5cm,
+	footskip = 28mm
+]{geometry}
+\usepackage{tabularx}
+\usepackage{layout}
+\usepackage{enumitem}
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+\renewcommand{\headrulewidth}{0pt}
+\usepackage{lastpage}
+
+\rfoot{Page \thepage/\getpagerefnumber{LastPage}}
+\setlength{\headheight}{40pt} 
+\setlength{\textheight}{640pt} 
+\usepackage{hyperref}
+
+\title{CV}
+\fancypagestyle{autorizzazione} {%
+   \fancyfoot[C]{Mohammed Alfatafta - m.alfatafta@uwaterloo.ca}}
+
+
+\begin{document}
+    \begin{tabular}{@{\hspace*{-0.5cm}}  p{5.1in} l }
+    	\multirow{ 2}{*}{\huge \bf Mohammed Alfatafta} \\\\
+    	m.alfatafta@uwaterloo.ca & Cheriton School of Computer Science\\
+    	(+1) 226-505-5999 & University of Waterloo\\
+    	\url{http://cs.uwaterloo.ca/~maaalfat/}& 200 University Avenue West\\
+    \end{tabular}\\
+    \rule {18.7cm}{1pt}
+    \normalsize
+%~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+%~~~~~~~~~~~~~~~~~~~Actual content~~~~~~~~~~~~~~~~~~`
+%~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+    \input{sec_education.tex}
+    \vspace*{-23pt}
+    
+    \input{sec_honors.tex}
+    
+    \input{sec_exp.tex}
+    
+    \input{sec_publications.tex}
+    \newpage \thispagestyle{autorizzazione}
+    
+    \input{sec_certificates.tex}
+    
+    \input{sec_community.tex}
+    
+    \input{sec_skills.tex}
+\end{document}
+
+%     \subsection*{PROJECTS}
+%     \begin{tabular}{ @{\bf}r p{4.7in} }
+    
+% 	    Sep 2013 -- Jan 2014 &  A project for deriving
+% the symmetries of a colored graph, supervised by Professor Karem Sakallah, Michigan University\\
+% 	    Sep 2015 -- Jan 2016 &  A project for investigating in depth the problem of carpool fairness, supervised by Professor Elias Koutsoupias from the University of Oxford\\
+%   	\end{tabular}
+    
+
+%\layout
+%TODO: Add projects: reinforcement, WIFI Project, Samer's course project, (maybe)HCI?
